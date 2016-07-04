@@ -3,3 +3,11 @@
   Showing of 'interpolate' filter:
   {{ 'Current version is v%VERSION%.' | interpolate }}
 </p>
+<div ng-controller="timeCtrl">
+  <h1>hhh {{clock}}</h1>
+</div>
+<div>
+  <label>username:</label>
+  <input type="text" ensure-unique="username" ng-model="user.username" required>
+  <label>{{user.username}}</label>
+</div>
